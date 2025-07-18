@@ -1,0 +1,24 @@
+# AGP - Flight Tracker 2.5 Docker Compose
+# Author: Andrew Holland
+# Version: 2.5.0
+# Change Log:
+# - 2.5.0: Updated to v2.5.0, maintained environment file loading (17-07-2025)
+# - 2.4.0: Updated to v2.4.0, maintained environment file loading
+version: '3.8'
+services:
+  ticket-tracker:
+    image: python:3.9-slim
+    container_name: ticket-tracker
+    ports:
+      - "5002:5000"
+    volumes:
+      - /volume1/docker/ticket-tracker:/app
+    working_dir: /app
+    environment:
+      - PYTHONPATH=/app
+      - ENV_FILE=/app/.env
+    command: >
+      bash -c "
+        pip install --no-cache-dir flask requests python-dotenv geopy &&
+        python app.py"
+    restart: unless-stopped
