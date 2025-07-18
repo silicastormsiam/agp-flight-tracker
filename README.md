@@ -20,7 +20,7 @@ AGP - Flight Tracker 2.5 enables users to enter and manage flight data from boar
 - **Files**: Includes the following in [files](./files):
   - `app.py`: Main Flask application.
   - `templates/index.html`: GUI template.
-  - `README.md`: Project documentation.
+  - `README.markdown`: Project documentation.
   - `LICENSE`: MIT license file.
   - `.env`: Environment variables (e.g., AVIATIONSTACK_API_KEY).
   - `compose.yaml`: Docker Compose configuration.
@@ -39,14 +39,14 @@ AGP - Flight Tracker 2.5 enables users to enter and manage flight data from boar
    mkdir -p /volume1/docker/flight-tracker/templates
    ```
 3. **Deploy Files**:
-   - Copy files from [files](./files) (`app.py`, `templates/index.html`, `README.md`, `LICENSE`, `.env`, `compose.yaml`, `tickets.csv`, `routes.csv`, `ticket_tracker.log`) to `/volume1/docker/flight-tracker`.
+   - Copy files from [files](./files) (`app.py`, `templates/index.html`, `README.markdown`, `LICENSE`, `.env`, `compose.yaml`, `tickets.csv`, `routes.csv`, `ticket_tracker.log`) to `/volume1/docker/flight-tracker`.
 4. **Set Permissions**:
    ```bash
    sudo chown admin:users /volume1/docker/flight-tracker
    sudo chmod 755 /volume1/docker/flight-tracker
    sudo chmod 664 /volume1/docker/flight-tracker/app.py
    sudo chmod 664 /volume1/docker/flight-tracker/templates/index.html
-   sudo chmod 664 /volume1/docker/flight-tracker/README.md
+   sudo chmod 664 /volume1/docker/flight-tracker/README.markdown
    sudo chmod 664 /volume1/docker/flight-tracker/LICENSE
    sudo chmod 664 /volume1/docker/flight-tracker/.env
    sudo chmod 664 /volume1/docker/flight-tracker/compose.yaml
