@@ -7,3 +7,4 @@ files/ticket_tracker.log
 .env
 *.log
 tickets.csv
+backup/
