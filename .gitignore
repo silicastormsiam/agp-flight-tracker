@@ -1,0 +1,9 @@
+files/.env
+files/tickets.csv
+files/ticket_tracker.log
+files/.env
+files/tickets.csv
+files/ticket_tracker.log
+.env
+*.log
+tickets.csv
