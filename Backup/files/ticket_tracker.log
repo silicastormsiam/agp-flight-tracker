@@ -1,0 +1,297 @@
+2025-07-11 05:48:01,464 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:48:01,465 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:48:01,468 RoE v3.8: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.10:5000
+2025-07-11 05:48:01,468 RoE v3.8: [33mPress CTRL+C to quit[0m
+2025-07-11 05:48:21,408 RoE v3.8: Entering index route
+2025-07-11 05:48:21,408 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:48:21,408 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:48:21,450 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:48:21] "GET / HTTP/1.1" 200 -
+2025-07-11 05:48:42,540 RoE v3.8: Entering index route
+2025-07-11 05:48:42,540 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:48:42,541 RoE v3.8: Processing route URT-DMK in calculate_km_travelled
+2025-07-11 05:48:42,541 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=URT&format=json&limit=1
+2025-07-11 05:48:42,542 RoE v3.8: Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-07-11 05:48:43,489 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=URT&format=json&limit=1 HTTP/1.1" 200 492
+2025-07-11 05:48:43,490 RoE v3.8: RateLimiter sleep(1.050769628956914)
+2025-07-11 05:48:44,542 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=URT&format=json&limit=1
+2025-07-11 05:48:44,786 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=URT&format=json&limit=1 HTTP/1.1" 200 492
+2025-07-11 05:48:44,786 RoE v3.8: RateLimiter sleep(1.7558887039776891)
+2025-07-11 05:48:46,544 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=DMK&format=json&limit=1
+2025-07-11 05:48:46,774 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=DMK&format=json&limit=1 HTTP/1.1" 200 690
+2025-07-11 05:48:46,775 RoE v3.8: RateLimiter sleep(1.7691893270239234)
+2025-07-11 05:48:48,546 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=DMK&format=json&limit=1
+2025-07-11 05:48:48,772 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=DMK&format=json&limit=1 HTTP/1.1" 200 690
+2025-07-11 05:48:48,774 RoE v3.8: Cached distance for URT-DMK: 9890 km
+2025-07-11 05:48:48,775 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:48:48] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 05:48:48,777 RoE v3.8: Entering index route
+2025-07-11 05:48:48,777 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:48:48,777 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:48:48,778 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:48:48] "GET / HTTP/1.1" 200 -
+2025-07-11 05:49:04,049 RoE v3.8: Entering index route
+2025-07-11 05:49:04,049 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:04,049 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:04,050 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:49:04] "GET / HTTP/1.1" 200 -
+2025-07-11 05:49:05,923 RoE v3.8: Entering index route
+2025-07-11 05:49:05,923 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:05,924 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:05,924 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:49:05] "GET / HTTP/1.1" 200 -
+2025-07-11 05:49:35,308 RoE v3.8: Entering index route
+2025-07-11 05:49:35,308 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:35,308 RoE v3.8: Processing route AUH-BKK in calculate_km_travelled
+2025-07-11 05:49:35,309 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:49:35,310 RoE v3.8: Resetting dropped connection: nominatim.openstreetmap.org
+2025-07-11 05:49:36,841 RoE v3.8: Incremented Retry for (url='/search?q=Abu+Dhabi+International+Airport&format=json&limit=1'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:49:36,842 RoE v3.8: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:49:36,842 RoE v3.8: Starting new HTTPS connection (2): nominatim.openstreetmap.org:443
+2025-07-11 05:49:37,504 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 05:49:37,505 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:49:38,508 RoE v3.8: Incremented Retry for (url='/search?q=Abu+Dhabi+International+Airport&format=json&limit=1'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:49:38,508 RoE v3.8: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:49:38,509 RoE v3.8: Starting new HTTPS connection (3): nominatim.openstreetmap.org:443
+2025-07-11 05:49:39,503 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 05:49:39,504 RoE v3.8: RateLimiter sleep(0.0012915160041302443)
+2025-07-11 05:49:39,505 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=BKK&format=json&limit=1
+2025-07-11 05:49:40,508 RoE v3.8: Incremented Retry for (url='/search?q=BKK&format=json&limit=1'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:49:40,508 RoE v3.8: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=BKK&format=json&limit=1
+2025-07-11 05:49:40,508 RoE v3.8: Starting new HTTPS connection (4): nominatim.openstreetmap.org:443
+2025-07-11 05:49:41,535 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=BKK&format=json&limit=1 HTTP/1.1" 200 499
+2025-07-11 05:49:41,535 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=BKK&format=json&limit=1
+2025-07-11 05:49:42,538 RoE v3.8: Incremented Retry for (url='/search?q=BKK&format=json&limit=1'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2025-07-11 05:49:42,539 RoE v3.8: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=BKK&format=json&limit=1
+2025-07-11 05:49:42,539 RoE v3.8: Starting new HTTPS connection (5): nominatim.openstreetmap.org:443
+2025-07-11 05:49:43,531 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=BKK&format=json&limit=1 HTTP/1.1" 200 499
+2025-07-11 05:49:43,533 RoE v3.8: Cached distance for AUH-BKK: 4944 km
+2025-07-11 05:49:43,533 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:49:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 05:49:43,536 RoE v3.8: Entering index route
+2025-07-11 05:49:43,536 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:43,536 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:49:43,537 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:49:43] "GET / HTTP/1.1" 200 -
+2025-07-11 05:50:16,518 RoE v3.8: Entering index route
+2025-07-11 05:50:16,518 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:50:16,519 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:50:16] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+2025-07-11 05:50:38,522 RoE v3.8: Entering index route
+2025-07-11 05:50:38,522 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:50:38,523 RoE v3.8: Processing route AUH-LAX in calculate_km_travelled
+2025-07-11 05:50:38,523 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:50:38,524 RoE v3.8: Resetting dropped connection: nominatim.openstreetmap.org
+2025-07-11 05:50:39,186 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 05:50:39,187 RoE v3.8: RateLimiter sleep(1.3362973520997912)
+2025-07-11 05:50:40,525 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 05:50:40,750 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 05:50:40,751 RoE v3.8: RateLimiter sleep(1.773045281181112)
+2025-07-11 05:50:42,527 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=LAX&format=json&limit=1
+2025-07-11 05:50:42,767 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=LAX&format=json&limit=1 HTTP/1.1" 200 544
+2025-07-11 05:50:42,768 RoE v3.8: RateLimiter sleep(1.7585328570567071)
+2025-07-11 05:50:44,529 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=LAX&format=json&limit=1
+2025-07-11 05:50:44,756 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=LAX&format=json&limit=1 HTTP/1.1" 200 544
+2025-07-11 05:50:44,758 RoE v3.8: Cached distance for AUH-LAX: 13502 km
+2025-07-11 05:50:44,759 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:50:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 05:50:44,761 RoE v3.8: Entering index route
+2025-07-11 05:50:44,761 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:50:44,761 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 05:50:44,762 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 05:50:44] "GET / HTTP/1.1" 200 -
+2025-07-11 06:03:22,293 RoE v3.8: Entering index route
+2025-07-11 06:03:22,293 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:22,293 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:22,295 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:03:22] "GET / HTTP/1.1" 200 -
+2025-07-11 06:03:42,071 RoE v3.8: Entering index route
+2025-07-11 06:03:42,071 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:42,071 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:42,073 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:03:42] "GET / HTTP/1.1" 200 -
+2025-07-11 06:03:58,624 RoE v3.8: Entering index route
+2025-07-11 06:03:58,624 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:58,625 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:03:58] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:03:58,628 RoE v3.8: Entering index route
+2025-07-11 06:03:58,628 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:58,628 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:03:58,629 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:03:58] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:00,984 RoE v3.8: Entering index route
+2025-07-11 06:04:00,984 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:00,985 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:00] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:00,987 RoE v3.8: Entering index route
+2025-07-11 06:04:00,987 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:00,987 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:00,988 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:00] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:06,492 RoE v3.8: Entering index route
+2025-07-11 06:04:06,492 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:06,493 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:06] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:06,496 RoE v3.8: Entering index route
+2025-07-11 06:04:06,496 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:06,496 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:06,497 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:06] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:09,908 RoE v3.8: Entering index route
+2025-07-11 06:04:09,908 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:09,909 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:09] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:09,912 RoE v3.8: Entering index route
+2025-07-11 06:04:09,913 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:09,913 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:09,913 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:09] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:14,009 RoE v3.8: Entering index route
+2025-07-11 06:04:14,009 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:14,010 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:14] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:14,014 RoE v3.8: Entering index route
+2025-07-11 06:04:14,014 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:14,014 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:14,015 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:14] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:26,586 RoE v3.8: Entering index route
+2025-07-11 06:04:26,586 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:26,587 RoE v3.8: Processing route AUH-IAD in calculate_km_travelled
+2025-07-11 06:04:26,587 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 06:04:26,588 RoE v3.8: Resetting dropped connection: nominatim.openstreetmap.org
+2025-07-11 06:04:27,528 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 06:04:27,529 RoE v3.8: RateLimiter sleep(1.0585914431139827)
+2025-07-11 06:04:28,589 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 06:04:28,808 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 06:04:28,809 RoE v3.8: RateLimiter sleep(1.7796524891164154)
+2025-07-11 06:04:30,590 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Washington+Dulles+International+Airport&format=json&limit=1
+2025-07-11 06:04:30,807 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Washington+Dulles+International+Airport&format=json&limit=1 HTTP/1.1" 200 545
+2025-07-11 06:04:30,807 RoE v3.8: RateLimiter sleep(1.783045917050913)
+2025-07-11 06:04:31,199 RoE v3.8: Entering index route
+2025-07-11 06:04:31,199 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:31,199 RoE v3.8: Processing route AUH-IAD in calculate_km_travelled
+2025-07-11 06:04:31,199 RoE v3.8: RateLimiter sleep(1.3908274269197136)
+2025-07-11 06:04:32,592 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 06:04:32,594 RoE v3.8: RateLimiter sleep(1.9980843318626285)
+2025-07-11 06:04:32,809 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 06:04:32,810 RoE v3.8: RateLimiter sleep(1.7820535029750317)
+2025-07-11 06:04:34,594 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Abu+Dhabi+International+Airport&format=json&limit=1
+2025-07-11 06:04:34,595 RoE v3.8: RateLimiter sleep(1.9985626288689673)
+2025-07-11 06:04:34,837 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Abu+Dhabi+International+Airport&format=json&limit=1 HTTP/1.1" 200 553
+2025-07-11 06:04:34,838 RoE v3.8: RateLimiter sleep(1.7561888629570603)
+2025-07-11 06:04:36,596 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Washington+Dulles+International+Airport&format=json&limit=1
+2025-07-11 06:04:36,597 RoE v3.8: RateLimiter sleep(1.9983754209242761)
+2025-07-11 06:04:36,813 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Washington+Dulles+International+Airport&format=json&limit=1 HTTP/1.1" 200 545
+2025-07-11 06:04:36,814 RoE v3.8: RateLimiter sleep(1.7819157948251814)
+2025-07-11 06:04:38,598 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Washington+Dulles+International+Airport&format=json&limit=1
+2025-07-11 06:04:38,600 RoE v3.8: RateLimiter sleep(1.9979214540217072)
+2025-07-11 06:04:38,815 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Washington+Dulles+International+Airport&format=json&limit=1 HTTP/1.1" 200 545
+2025-07-11 06:04:38,816 RoE v3.8: Cached distance for AUH-IAD: 11405 km
+2025-07-11 06:04:38,817 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:38] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:38,820 RoE v3.8: Entering index route
+2025-07-11 06:04:38,820 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:38,820 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:38,820 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:38] "GET / HTTP/1.1" 200 -
+2025-07-11 06:04:40,600 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Washington+Dulles+International+Airport&format=json&limit=1
+2025-07-11 06:04:40,856 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=Washington+Dulles+International+Airport&format=json&limit=1 HTTP/1.1" 200 545
+2025-07-11 06:04:40,858 RoE v3.8: Cached distance for AUH-IAD: 11405 km
+2025-07-11 06:04:40,858 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:47,067 RoE v3.8: Entering index route
+2025-07-11 06:04:47,067 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:47,068 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:04:47,072 RoE v3.8: Entering index route
+2025-07-11 06:04:47,072 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:47,072 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:04:47,073 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:04:47] "GET / HTTP/1.1" 200 -
+2025-07-11 06:05:27,711 RoE v3.8: Entering index route
+2025-07-11 06:05:27,711 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:05:27,712 RoE v3.8: Processing route URT-DMK in calculate_km_travelled
+2025-07-11 06:05:27,712 RoE v3.8: Retrieved cached distance for URT-DMK: 9890 km
+2025-07-11 06:05:27,712 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:05:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:05:27,715 RoE v3.8: Entering index route
+2025-07-11 06:05:27,716 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:05:27,716 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:05:27,716 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:05:27] "GET / HTTP/1.1" 200 -
+2025-07-11 06:07:12,118 RoE v3.8: Entering index route
+2025-07-11 06:07:12,118 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:07:12,118 RoE v3.8: Processing route BKK-LHR in calculate_km_travelled
+2025-07-11 06:07:12,119 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=BKK&format=json&limit=1
+2025-07-11 06:07:12,120 RoE v3.8: Resetting dropped connection: nominatim.openstreetmap.org
+2025-07-11 06:07:12,795 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=BKK&format=json&limit=1 HTTP/1.1" 200 499
+2025-07-11 06:07:12,796 RoE v3.8: RateLimiter sleep(1.3224217081442475)
+2025-07-11 06:07:14,120 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=BKK&format=json&limit=1
+2025-07-11 06:07:14,359 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=BKK&format=json&limit=1 HTTP/1.1" 200 499
+2025-07-11 06:07:14,360 RoE v3.8: RateLimiter sleep(1.7601855678949505)
+2025-07-11 06:07:16,122 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=London+Heathrow+Airport&format=json&limit=1
+2025-07-11 06:07:16,341 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=London+Heathrow+Airport&format=json&limit=1 HTTP/1.1" 200 565
+2025-07-11 06:07:16,342 RoE v3.8: RateLimiter sleep(1.7800712371245027)
+2025-07-11 06:07:18,124 RoE v3.8: Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=London+Heathrow+Airport&format=json&limit=1
+2025-07-11 06:07:18,340 RoE v3.8: https://nominatim.openstreetmap.org:443 "GET /search?q=London+Heathrow+Airport&format=json&limit=1 HTTP/1.1" 200 565
+2025-07-11 06:07:18,342 RoE v3.8: Cached distance for BKK-LHR: 9565 km
+2025-07-11 06:07:18,342 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:07:18] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 06:07:18,345 RoE v3.8: Entering index route
+2025-07-11 06:07:18,345 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:07:18,345 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 06:07:18,346 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 06:07:18] "GET / HTTP/1.1" 200 -
+2025-07-11 12:42:22,265 RoE v3.8: Entering index route
+2025-07-11 12:42:22,272 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:42:22,272 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:42:22,276 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:42:22] "GET / HTTP/1.1" 200 -
+2025-07-11 12:52:29,395 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 12:52:29,396 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 12:52:29,399 RoE v3.8: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.10:5000
+2025-07-11 12:52:29,399 RoE v3.8: [33mPress CTRL+C to quit[0m
+2025-07-11 12:52:30,911 RoE v3.8: Entering index route
+2025-07-11 12:52:30,911 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:52:30,911 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:52:30,946 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:52:30] "GET / HTTP/1.1" 200 -
+2025-07-11 12:52:49,927 RoE v3.8: Entering index route
+2025-07-11 12:52:49,927 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:52:49,927 RoE v3.8: Processing route AUH-IAD in calculate_km_travelled
+2025-07-11 12:52:49,927 RoE v3.8: Retrieved cached distance for AUH-IAD: 11405 km
+2025-07-11 12:52:49,928 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:52:49] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 12:52:49,933 RoE v3.8: Entering index route
+2025-07-11 12:52:49,933 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:52:49,934 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:52:49,934 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:52:49] "GET / HTTP/1.1" 200 -
+2025-07-11 12:53:21,363 RoE v3.8: Entering index route
+2025-07-11 12:53:21,363 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:53:21,363 RoE v3.8: Processing route URT-DMK in calculate_km_travelled
+2025-07-11 12:53:21,364 RoE v3.8: Retrieved cached distance for URT-DMK: 9890 km
+2025-07-11 12:53:21,364 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:53:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 12:53:21,369 RoE v3.8: Entering index route
+2025-07-11 12:53:21,369 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:53:21,370 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 12:53:21,370 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 12:53:21] "GET / HTTP/1.1" 200 -
+2025-07-11 13:31:01,700 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 13:31:01,701 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 13:31:01,705 RoE v3.8: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.10:5000
+2025-07-11 13:31:01,705 RoE v3.8: [33mPress CTRL+C to quit[0m
+2025-07-11 13:33:37,476 RoE v3.8: Entering index route
+2025-07-11 13:33:37,476 RoE v3.8: Initialized in-memory tickets database: 01-08-2018
+2025-07-11 13:33:37,476 RoE v3.8: Skipped initialization; tickets_data already populated
+2025-07-11 13:33:37,539 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:33:37] "GET / HTTP/1.1" 200 -
+2025-07-11 13:34:09,154 RoE v3.8: Entering index route
+2025-07-11 13:34:09,154 RoE v3.8: Skipped initialization; tickets_data already populated
+2025-07-11 13:34:09,154 RoE v3.8: Processing route URT-DMK in calculate_km_travelled
+2025-07-11 13:34:09,155 RoE v3.8: Retrieved cached distance for URT-DMK: 9890 km
+2025-07-11 13:34:09,155 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:34:09] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 13:34:09,160 RoE v3.8: Entering index route
+2025-07-11 13:34:09,160 RoE v3.8: Skipped initialization; tickets_data already populated
+2025-07-11 13:34:09,160 RoE v3.8: Skipped initialization; tickets_data already populated
+2025-07-11 13:34:09,161 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:34:09] "GET / HTTP/1.1" 200 -
+2025-07-11 13:45:44,065 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 13:45:44,065 RoE v3.8: Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-07-11 13:45:44,069 RoE v3.8: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.10:5000
+2025-07-11 13:45:44,069 RoE v3.8: [33mPress CTRL+C to quit[0m
+2025-07-11 13:47:17,613 RoE v3.8: Entering index route
+2025-07-11 13:47:17,614 RoE v3.8: Created empty tickets.csv
+2025-07-11 13:47:17,614 RoE v3.8: No tickets in tickets.csv; starting with empty tickets_data
+2025-07-11 13:47:17,614 RoE v3.8: Loaded 0 tickets from tickets.csv
+2025-07-11 13:47:17,614 RoE v3.8: No tickets in tickets.csv; starting with empty tickets_data
+2025-07-11 13:47:17,614 RoE v3.8: No valid tickets found in tickets database
+2025-07-11 13:47:17,639 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:47:17] "GET / HTTP/1.1" 200 -
+2025-07-11 13:47:41,056 RoE v3.8: Entering index route
+2025-07-11 13:47:41,056 RoE v3.8: Loaded 0 tickets from tickets.csv
+2025-07-11 13:47:41,056 RoE v3.8: No tickets in tickets.csv; starting with empty tickets_data
+2025-07-11 13:47:41,073 RoE v3.8: Processing route URT-DMK in calculate_km_travelled
+2025-07-11 13:47:41,074 RoE v3.8: Retrieved cached distance for URT-DMK: 9890 km
+2025-07-11 13:47:41,074 RoE v3.8: Saved 1 tickets to tickets.csv
+2025-07-11 13:47:41,074 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:47:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-11 13:47:41,077 RoE v3.8: Entering index route
+2025-07-11 13:47:41,077 RoE v3.8: Loaded 1 tickets from tickets.csv
+2025-07-11 13:47:41,077 RoE v3.8: Loaded 1 tickets from tickets.csv
+2025-07-11 13:47:41,077 RoE v3.8: Loaded 1 tickets from tickets.csv
+2025-07-11 13:47:41,078 RoE v3.8: Loaded 1 tickets from tickets.csv
+2025-07-11 13:47:41,078 RoE v3.8: 172.17.0.1 - - [11/Jul/2025 13:47:41] "GET / HTTP/1.1" 200 -

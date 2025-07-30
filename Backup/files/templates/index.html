@@ -1,0 +1,164 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: #00B7EB;">AGP - Flight Tracker 2.5</title>
+    <!-- Version: 2.5.0 -->
+    <!-- Change Log: -->
+    <!-- - 2.5.0: Reverted to dynamic IATA code retrieval via Geopy Nominatim (17-07-2025) -->
+    <!-- - 2.4.0: Implemented single dynamic ticket action form with AJAX -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            background-color: #2F2F2F;
+            color: #E0E0E0;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #00B7EB;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .totals {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #000000;
+            border: 1px solid #00B7EB;
+            border-radius: 8px;
+        }
+        .totals p {
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .action-form {
+            margin-top: 15px;
+            padding: 10px;
+            border-top: 1px solid #00B7EB;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #00B7EB;
+            padding: 10px;
+            text-align: left;
+            min-width: 100px;
+        }
+        th {
+            background-color: #1A1A1A;
+        }
+        .form-container, .action-form {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #000000;
+            border: 1px solid #00B7EB;
+            border-radius: 8px;
+        }
+        .form-container input, .form-container select, .action-form input, .action-form select {
+            margin: 5px;
+            padding: 5px;
+            background-color: #1A1A1A;
+            color: #E0E0E0;
+            border: 1px solid #00B7EB;
+            border-radius: 4px;
+        }
+        .form-container input[type="submit"], .action-form input[type="submit"], .action-form button {
+            background-color: #00B7EB;
+            color: #000;
+            cursor: pointer;
+        }
+        #ticket-error {
+            color: #ff4d4d;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#ticket-id').on('input', function() {
+                var ticketId = $(this).val();
+                if (ticketId) {
+                    $.ajax({
+                        url: '/get_ticket/' + ticketId,
+                        type: 'GET',
+                        success: function(response) {
+                            if (response.success) {
+                                $('#ticket-error').hide();
+                                $('#edit-airline').val(response.ticket.airline);
+                                $('#edit-date').val(response.ticket.date);
+                                $('#edit-route').val(response.ticket.route);
+                                $('#edit-class').val(response.ticket.class);
+                                $('#edit-seat').val(response.ticket.seat_allocated);
+                                $('#edit-other').val(response.ticket.other_data);
+                                $('#edit-id').val(response.ticket.rowid);
+                                $('#action-form').show();
+                            } else {
+                                $('#ticket-error').text(response.message).show();
+                                $('#action-form').hide();
+                            }
+                        },
+                        error: function() {
+                            $('#ticket-error').text('Server error').show();
+                            $('#action-form').hide();
+                        }
+                    });
+                } else {
+                    $('#ticket-error').hide();
+                    $('#action-form').hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>AGP - Flight Tracker 2.5</h1>
+        <h2>Tickets (Since {{ oldest_date }})</h2>
+        <div class="form
