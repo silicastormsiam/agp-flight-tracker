@@ -1,73 +1,81 @@
-# AGP - Flight Tracker 2.5
-A Flask-based web application for tracking flight data, deployed on Synology NAS with DSM’s Container Manager, embracing a Cyberpunk Monk aesthetic.
+# ✈️ AGP Flight Tracker — From Runways to Remote Jungles
 
-## Overview
-AGP - Flight Tracker 2.5 enables users to enter and manage flight data from boarding passes, calculating "Km Travelled" for First, Business, and Economy classes with a grand total. It uses Geopy’s Nominatim API for dynamic IATA code coordinate retrieval and caches distances in `routes.csv`. The app supports editing/deleting entries via a sequential Ticket ID.
+![Stars](https://img.shields.io/github/stars/silicastormsiam/agp-flight-tracker?style=social)
+![Forks](https://img.shields.io/github/forks/silicastormsiam/agp-flight-tracker?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/silicastormsiam/agp-flight-tracker)
+![License](https://img.shields.io/github/license/silicastormsiam/agp-flight-tracker)
 
-## Project Phases (PMI-PMBOK)
-- **Initiating**: Defined goals for a flight data tracking GUI.
-- **Planning**: Designed GUI and planned GPS data retrieval.
-- **Executing**: Developed Python app (`app.py`, `templates/index.html`) with Geopy integration.
-- **Monitoring and Controlling**: Validated distance calculations (e.g., JFK-LGW ~5570 km).
-- **Closing**: Deployed via Docker (`compose.yaml`) with persistent data.
+---
 
-## Key Features
-- **Flight Data Entry**: Input boarding pass details, including IATA codes (e.g., URT-DMK).
-- **Dynamic Distance Calculation**: Uses Geopy’s Nominatim API to retrieve coordinates for IATA codes, caches in `routes.csv`.
-- **Scalable UI**: Dynamic form with AJAX for editing/deleting tickets.
-- **Persistent Storage**: Tickets stored in `tickets.csv` persist across restarts.
-- **Logging**: Geocoded coordinates logged in `ticket_tracker.log`.
-- **Files**: Includes the following in [files](./files):
-  - `app.py`: Main Flask application.
-  - `templates/index.html`: GUI template.
-  - `README.markdown`: Project documentation.
-  - `LICENSE`: MIT license file.
-  - `.env`: Environment variables (e.g., AVIATIONSTACK_API_KEY).
-  - `compose.yaml`: Docker Compose configuration.
-  - `tickets.csv`: Stores ticket data.
-  - `routes.csv`: Caches route distances.
-  - `ticket_tracker.log`: Logs geocoding and app activity.
+## 🛫 About This Project
 
-## Setup Instructions for Synology NAS (DSM 7.2 or later)
-1. **Clone Repository**:
-   ```bash
-   git clone https://github.com/silicastormsiam/agp-flight-tracker.git
-   cd agp-flight-tracker
-   ```
-2. **Directory Setup**:
-   ```bash
-   mkdir -p /volume1/docker/flight-tracker/templates
-   ```
-3. **Deploy Files**:
-   - Copy files from [files](./files) (`app.py`, `templates/index.html`, `README.markdown`, `LICENSE`, `.env`, `compose.yaml`, `tickets.csv`, `routes.csv`, `ticket_tracker.log`) to `/volume1/docker/flight-tracker`.
-4. **Set Permissions**:
-   ```bash
-   sudo chown admin:users /volume1/docker/flight-tracker
-   sudo chmod 755 /volume1/docker/flight-tracker
-   sudo chmod 664 /volume1/docker/flight-tracker/app.py
-   sudo chmod 664 /volume1/docker/flight-tracker/templates/index.html
-   sudo chmod 664 /volume1/docker/flight-tracker/README.markdown
-   sudo chmod 664 /volume1/docker/flight-tracker/LICENSE
-   sudo chmod 664 /volume1/docker/flight-tracker/.env
-   sudo chmod 664 /volume1/docker/flight-tracker/compose.yaml
-   sudo chmod 664 /volume1/docker/flight-tracker/tickets.csv
-   sudo chmod 664 /volume1/docker/flight-tracker/routes.csv
-   sudo chmod 664 /volume1/docker/flight-tracker/ticket_tracker.log
-   ```
-5. **Run Container**:
-   ```bash
-   cd /volume1/docker/flight-tracker
-   docker-compose -f compose.yaml up -d
-   ```
-6. **Access**: Open the configured Docker port (e.g., http://<NAS_IP>:5002) in a browser.
+Now, you might be wondering what this is… well, I have a shoebox full of boarding passes from **20 years working in flight operations for airlines**, mostly in the Middle East.  
 
-## Technical Details
-- **Technologies**: Python 3.9, Flask (3.1.1), Geopy (2.4.1), python-dotenv (1.1.1), requests (2.32.4), jQuery (3.6.0), Docker.
-- **License**: MIT (see [files/LICENSE](./files/LICENSE)).
+I was jet-setting for software conferences, also working as an aviation consultant bouncing arrivals and departures like a…?  
 
-## Badges
-![Python](https://img.shields.io/badge/Python-FF69B4?logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-00FF00?logo=flask&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-800080?logo=docker&logoColor=white)
+And then my personal expeditions to faraway jungles and treks seeking the ultimate banana smoothie… lol.
 
-*Last updated: July 18, 2025*
+---
+
+## 🎯 Purpose & Features
+
+- 🗂️ Digitally archive your flight history, boarding passes, and itineraries
+- 🛬 Visualize flight routes and stats across time and continents
+- 📊 Generate insights like total miles flown, airlines frequented, hubs visited
+- 📅 Tag flights by purpose: business, conferences, or personal adventure
+- 🌍 Map integration for visual route plotting
+- 📱 Potential mobile integration for on-the-go tracking
+
+---
+
+## 🧰 Tech Stack & Tools
+
+| Layer          | Technology / Tool                          |
+|----------------|------------------------------------------|
+| Backend        | Python / Node.js (TBD)                    |
+| Frontend       | React / Mapbox or Leaflet (for maps)     |
+| Data Storage   | SQLite / JSON files / Cloud DB (TBD)     |
+| APIs           | FlightAware, OpenSky Network (optional)  |
+
+---
+
+## 🛠️ Usage
+
+1. Import flight data (CSV, JSON, manual input)  
+2. View interactive flight logs and maps  
+3. Generate personalized reports  
+4. Export your journey for memories or analysis  
+
+---
+
+## 🗺️ Personal Notes
+
+This project is part digital scrapbook, part tool — blending decades of airline operations experience with the thrill of discovering new corners of the world, one flight at a time.
+
+---
+
+## 🚀 Roadmap
+
+- [x] Repo initialized  
+- [ ] Core flight data ingestion  
+- [ ] Visual flight map display  
+- [ ] Filtering by date, airline, and trip type  
+- [ ] Export and report generation  
+- [ ] Mobile companion app (stretch goal!)  
+
+---
+
+## 🤝 Contributing
+
+Whether you want to help build features, suggest API integrations, or share your own travel stories, all contributions are welcome!
+
+---
+
+## 📄 License
+
+MIT License — fly free, code free.
+
+---
+
+> *“To travel is to live, but to track your travels is to relive.”*  
+> — Andrew Holland
